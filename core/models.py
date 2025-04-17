@@ -5,7 +5,7 @@ from shortuuid.django_fields import ShortUUIDField
 
 # Create your models here.
 
-
+# What kin of transaction we are making
 TRANSACTION_TYPE = (
     ('transfer', 'transfer'),
     ('recived', 'recived'),
@@ -15,7 +15,7 @@ TRANSACTION_TYPE = (
     ('none', 'none')
 )
 
-
+# The current type of the transaction
 TRANSACTION_STATUS = (
     ("failed", "failed"),
     ("complete", "complete"),
@@ -26,6 +26,7 @@ TRANSACTION_STATUS = (
     ("request_settled", "request settled")
 
 )
+
 
 CARD_TYPE = (
     ('master', 'master'),
